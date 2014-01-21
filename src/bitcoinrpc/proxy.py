@@ -22,14 +22,14 @@
 try:
     import http.client as httplib
 except ImportError:
-    import httplib
+    import httplib # python2
 import base64
 import json
 import decimal
 try:
     import urllib.parse as urlparse
 except ImportError:
-    import urlparse
+    import urlparse # python2
 from collections import defaultdict, deque
 from bitcoinrpc.exceptions import TransportException
 
